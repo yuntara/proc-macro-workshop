@@ -33,14 +33,14 @@ impl CommandBuilder {
         self.executable = Some(executable);
         self
     }
-    fn arg(&mut self, arg: String) -> &mut Self {
+    fn args(&mut self, args: String) -> &mut Self {
         if let Some(ref mut args) = self.args {
-            args.push(arg);
+            args.push(args);
         } else {
-            self
-                .args = Some(
-                <[_]>::into_vec(#[rustc_box] ::alloc::boxed::Box::new([arg])),
-            );
+            self.args = Some(<[_]>::into_vec(
+                #[rustc_box]
+                ::alloc::boxed::Box::new([args]),
+            ));
         };
         self
     }
@@ -52,10 +52,10 @@ impl CommandBuilder {
         if let Some(ref mut ref_env) = self.env {
             ref_env.push(env);
         } else {
-            self
-                .env = Some(
-                <[_]>::into_vec(#[rustc_box] ::alloc::boxed::Box::new([env])),
-            );
+            self.env = Some(<[_]>::into_vec(
+                #[rustc_box]
+                ::alloc::boxed::Box::new([env]),
+            ));
         };
         self
     }
@@ -94,7 +94,10 @@ fn main() {
     };
     match (
         &command.args,
-        &<[_]>::into_vec(#[rustc_box] ::alloc::boxed::Box::new(["build", "--release"])),
+        &<[_]>::into_vec(
+            #[rustc_box]
+            ::alloc::boxed::Box::new(["build", "--release"]),
+        ),
     ) {
         (left_val, right_val) => {
             if !(*left_val == *right_val) {

@@ -37,13 +37,13 @@ fn determine_fields(
         data,
     }: BuilderInputReceiver,
 ) -> Result<RenderFields> {
-    let struct_name = ident;
     let builder_name = format_ident!("{}Builder", ident);
+    let struct_name = ident.clone();
 
     let fields = data
         .as_ref()
         .take_struct()
-        .ok_or_else(|| Error::new(a, "must be Struct"))?
+        .ok_or_else(|| Error::new(ident.span(), "must be Struct"))?
         .fields;
 
     let wrapped_fields = fields
