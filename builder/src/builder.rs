@@ -205,10 +205,7 @@ pub(crate) fn expand_derive_builder(input: &syn::DeriveInput) -> Result<proc_mac
         Ok(parsed) => parsed,
         Err(e) => return Err(e.into()),
     };
-    let fields = determine_fields(builder);
-    quote! {
-        #builder
-    }
+    let fields = determine_fields(builder)?;
 
-    Ok(render_builder())
+    Ok(render_builder(fields).into())
 }
