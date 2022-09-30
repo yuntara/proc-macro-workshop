@@ -108,11 +108,11 @@ fn determine_fields(
                 }
             } else {
                 quote! {
-                    fn #field_ident(&mut self, #field_ident: #inner_type) -> &mut Self {
+                    fn #each_method_name_ident(&mut self, #each_method_name_ident: #inner_type) -> &mut Self {
                         if let Some(ref mut #field_ident) = self.#field_ident {
-                            #field_ident.push(#field_ident);
+                            #field_ident.push(#each_method_name_ident);
                         } else {
-                            self.#field_ident = Some(vec![#field_ident]);
+                            self.#field_ident = Some(vec![#each_method_name_ident]);
                         };
                         self
                     }
