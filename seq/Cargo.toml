@@ -5,8 +5,10 @@ autotests = false
 edition = "2021"
 publish = false
 
+
 [lib]
 proc-macro = true
+
 
 [[test]]
 name = "tests"
@@ -17,3 +19,7 @@ trybuild = { version = "1.0.49", features = ["diff"] }
 
 [dependencies]
 # TODO
+proc-macro2 = "*"
+quote = "*"
+syn = "*"
+darling = "*"

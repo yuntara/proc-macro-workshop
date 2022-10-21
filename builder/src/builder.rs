@@ -57,7 +57,7 @@ fn determine_fields(
                 }
             } else {
                 quote! {
-                    #ident: Option<#ty>
+                    #ident: std::option::Option<#ty>
                 }
             }
         })
@@ -72,11 +72,11 @@ fn determine_fields(
 
             if is_vec_type(ty) && each.is_some() {
                 quote! {
-                    #ident: Some(vec![])
+                    #ident: std::option::Option::Some(vec![])
                 }
             } else {
                 quote! {
-                    #ident: None
+                    #ident: std::option::Option::None
                 }
             }
         })
@@ -98,10 +98,10 @@ fn determine_fields(
                 let ref_ident = format_ident!("ref_{}", each_method_name);
                 quote! {
                     fn #field_ident(&mut self, #each_method_name_ident: #inner_type) -> &mut Self {
-                        if let Some(ref mut #ref_ident) = self.#field_ident {
+                        if let std::option::Option::Some(ref mut #ref_ident) = self.#field_ident {
                             #ref_ident.push(#each_method_name_ident);
                         } else {
-                            self.#field_ident = Some(vec![#each_method_name_ident]);
+                            self.#field_ident = std::option::Option::Some(vec![#each_method_name_ident]);
                         };
                         self
                     }
@@ -109,16 +109,16 @@ fn determine_fields(
             } else {
                 quote! {
                     fn #each_method_name_ident(&mut self, #each_method_name_ident: #inner_type) -> &mut Self {
-                        if let Some(ref mut #field_ident) = self.#field_ident {
+                        if let std::option::Option::Some(ref mut #field_ident) = self.#field_ident {
                             #field_ident.push(#each_method_name_ident);
                         } else {
-                            self.#field_ident = Some(vec![#each_method_name_ident]);
+                            self.#field_ident = std::option::Option::Some(vec![#each_method_name_ident]);
                         };
                         self
                     }
 
                     fn #field_ident(&mut self, #field_ident: #ty) -> &mut Self {
-                        self.#field_ident = Some(#field_ident);
+                        self.#field_ident = std::option::Option::Some(#field_ident);
                         self
                     }
                 }
@@ -127,14 +127,14 @@ fn determine_fields(
             let inner_type = extract_inner_type(&ty);
             quote! {
                 fn #field_ident(&mut self, #field_ident: #inner_type) -> &mut Self {
-                    self.#field_ident = Some(#field_ident);
+                    self.#field_ident = std::option::Option::Some(#field_ident);
                     self
                 }
             }
         } else {
             quote! {
                 fn #field_ident(&mut self, #field_ident: #ty) -> &mut Self {
-                    self.#field_ident = Some(#field_ident);
+                    self.#field_ident = std::option::Option::Some(#field_ident);
                     self
                 }
             }
@@ -191,8 +191,8 @@ fn render_builder(
         impl #builder_name {
             #(#builder_fields_setter)*
 
-            pub fn build(&mut self) -> Result<#struct_name, Box<dyn std::error::Error>> {
-                Ok(#struct_name {
+            pub fn build(&mut self) -> std::result::Result<#struct_name, std::boxed::Box<dyn std::error::Error>> {
+                std::result::Result::Ok(#struct_name {
                     #(#builder_build),*
                 })
             }

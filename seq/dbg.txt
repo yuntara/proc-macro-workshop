@@ -1,0 +1,62 @@
+Ident { sym: fn, span: #0 bytes(810..812) }Ident { sym: f, span: #0 bytes(813..814) }Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }Ident { sym: N, span: #0 bytes(815..816) }Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }Ident { sym: u64, span: #0 bytes(823..826) }Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }Ident { sym: N, span: #0 bytes(837..838) }Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }Ident { sym: fn, span: #0 bytes(810..812) }Ident { sym: f, span: #0 bytes(813..814) }Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }Ident { sym: N, span: #0 bytes(815..816) }Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }Ident { sym: u64, span: #0 bytes(823..826) }Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }Ident { sym: N, span: #0 bytes(837..838) }Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }Ident { sym: fn, span: #0 bytes(810..812) }Ident { sym: f, span: #0 bytes(813..814) }Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }Ident { sym: N, span: #0 bytes(815..816) }Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }Ident { sym: u64, span: #0 bytes(823..826) }Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }Ident { sym: N, span: #0 bytes(837..838) }Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }Ident { sym: fn, span: #0 bytes(810..812) }
+Ident { sym: f, span: #0 bytes(813..814) }
+Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }
+Ident { sym: N, span: #0 bytes(815..816) }
+Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }
+Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }
+Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }
+Ident { sym: u64, span: #0 bytes(823..826) }
+Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }
+Ident { sym: N, span: #0 bytes(837..838) }
+Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }
+Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }
+Ident { sym: fn, span: #0 bytes(810..812) }
+Ident { sym: f, span: #0 bytes(813..814) }
+Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }
+Ident { sym: N, span: #0 bytes(815..816) }
+Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }
+Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }
+Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }
+Ident { sym: u64, span: #0 bytes(823..826) }
+Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }
+Ident { sym: N, span: #0 bytes(837..838) }
+Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }
+Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }
+Ident { sym: fn, span: #0 bytes(810..812) }
+Ident { sym: f, span: #0 bytes(813..814) }
+Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }
+Ident { sym: N, span: #0 bytes(815..816) }
+Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }
+Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }
+Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }
+Ident { sym: u64, span: #0 bytes(823..826) }
+Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }
+Ident { sym: N, span: #0 bytes(837..838) }
+Punct { char: '*', spacing: Alone, span: #0 bytes(839..840) }
+Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }
+Ident { sym: fn, span: #0 bytes(810..812) }
+Ident { sym: f, span: #0 bytes(813..814) }
+Punct { char: '~', spacing: Alone, span: #0 bytes(814..815) }
+Ident { sym: N, span: #0 bytes(815..816) }
+Group { delimiter: Parenthesis, stream: TokenStream [], span: #0 bytes(817..819) }
+Punct { char: '-', spacing: Joint, span: #0 bytes(820..821) }
+Punct { char: '>', spacing: Alone, span: #0 bytes(821..822) }
+Ident { sym: u64, span: #0 bytes(823..826) }
+Group { delimiter: Brace, stream: TokenStream [Ident { ident: "N", span: #0 bytes(837..838) }, Punct { ch: '*', spacing: Alone, span: #0 bytes(839..840) }, Literal { kind: Integer, symbol: "2", suffix: None, span: #0 bytes(841..842) }], span: #0 bytes(827..848) }
+Ident { sym: N, span: #0 bytes(837..838) }
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f", span: #0 bytes(813..814) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f", span: #0 bytes(813..814) }], TokenStream [Punct { ch: '~', spacing: Alone, span: #0 bytes(814..815) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }], TokenStream [Punct { ch: '>', spacing: Alone, span: #0 bytes(821..822) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }], TokenStream [Punct { ch: '>', spacing: Alone, span: #0 bytes(821..822) }], TokenStream [Ident { ident: "u64", span: #0 bytes(823..826) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f", span: #0 bytes(813..814) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f", span: #0 bytes(813..814) }], TokenStream [Punct { ch: '~', spacing: Alone, span: #0 bytes(814..815) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }], TokenStream [Punct { ch: '>', spacing: Alone, span: #0 bytes(821..822) }]]
+[TokenStream [Ident { ident: "fn", span: #0 bytes(810..812) }], TokenStream [Ident { ident: "f1", span: #0 bytes(813..814) }], TokenStream [Group { delimiter: Parenthesis, stream: TokenStream [], span: #5 bytes(789..851) }], TokenStream [Punct { ch: '-', spacing: Joint, span: #0 bytes(820..821) }], TokenStream [Punct { ch: '>', spacing: Alone, span: #0 bytes(821..822) }], TokenStream [Ident { ident: "u64", span: #0 bytes(823..826) }]]
